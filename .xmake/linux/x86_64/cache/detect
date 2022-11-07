@@ -1,0 +1,20 @@
+{
+    find_program = {
+        qmake = "/home/youngday/Qt/6.2.4/gcc_64/bin/qmake"
+    },
+    ["detect.sdks.find_qt"] = {
+        qt = {
+            libexecdir_host = "/home/youngday/Qt/6.2.4/gcc_64/libexec",
+            bindir_host = "/home/youngday/Qt/6.2.4/gcc_64/bin",
+            pluginsdir = "/home/youngday/Qt/6.2.4/gcc_64/plugins",
+            libexecdir = "/home/youngday/Qt/6.2.4/gcc_64/libexec",
+            bindir = "/home/youngday/Qt/6.2.4/gcc_64/bin",
+            includedir = "/home/youngday/Qt/6.2.4/gcc_64/include",
+            sdkdir = "/home/youngday/Qt/6.2.4/gcc_64",
+            sdkver = "6.2.4",
+            libdir = "/home/youngday/Qt/6.2.4/gcc_64/lib",
+            mkspecsdir = "/home/youngday/Qt/6.2.4/gcc_64/mkspecs",
+            qmldir = "/home/youngday/Qt/6.2.4/gcc_64/qml"
+        }
+    }
+}

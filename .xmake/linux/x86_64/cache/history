@@ -1,0 +1,5 @@
+{
+    cmdlines = {
+        "xmake l /home/youngday/.vscode/extensions/tboox.xmake-vscode-1.8.3/assets/config.lua"
+    }
+}

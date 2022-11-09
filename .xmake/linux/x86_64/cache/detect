@@ -1,20 +1,716 @@
 {
-    find_program = {
-        qmake = "/home/youngday/Qt/6.2.4/gcc_64/bin/qmake"
+    find_package_linux_x86_64_fetch_package_xmake = {
+        ["xmake::sqlite3_5d11e4a4fb2b4009b1c06786f9f16b51_release_3.39.0+200_external"] = {
+            version = "3.39.0+200",
+            static = true,
+            linkdirs = {
+                "/home/youngday/.xmake/packages/s/sqlite3/3.39.0+200/5d11e4a4fb2b4009b1c06786f9f16b51/lib"
+            },
+            sysincludedirs = {
+                "/home/youngday/.xmake/packages/s/sqlite3/3.39.0+200/5d11e4a4fb2b4009b1c06786f9f16b51/include"
+            },
+            links = {
+                "sqlite3"
+            },
+            syslinks = {
+                "pthread",
+                "dl"
+            },
+            libfiles = {
+                "/home/youngday/.xmake/packages/s/sqlite3/3.39.0+200/5d11e4a4fb2b4009b1c06786f9f16b51/lib/libsqlite3.a"
+            }
+        },
+        ["xmake::xtensor_7589bb6431db4fba90e4d138dda37226_release_0.24.3_external"] = false,
+        ["xmake::zeromq_9ef5e64a34f3447c97a3ec2fba4595b3_release_4.3.4_external"] = {
+            linkdirs = {
+                "/home/youngday/.xmake/packages/z/zeromq/4.3.4/9ef5e64a34f3447c97a3ec2fba4595b3/lib"
+            },
+            sysincludedirs = {
+                "/home/youngday/.xmake/packages/z/zeromq/4.3.4/9ef5e64a34f3447c97a3ec2fba4595b3/include"
+            },
+            links = {
+                "zmq"
+            },
+            syslinks = "pthread",
+            libfiles = {
+                "/home/youngday/.xmake/packages/z/zeromq/4.3.4/9ef5e64a34f3447c97a3ec2fba4595b3/lib/libzmq.a"
+            }
+        },
+        ["xmake::openblas_811c62adbd54418cb6c78d3b43ac74ff_release_0.3.21_external"] = false,
+        ["xmake::cppzmq_449d10e3c4af406fb73dacd90dbe8d2f_release_v4.8.1_external"] = {
+            version = "v4.8.1",
+            license = "MIT",
+            sysincludedirs = {
+                "/home/youngday/.xmake/packages/c/cppzmq/v4.8.1/449d10e3c4af406fb73dacd90dbe8d2f/include"
+            }
+        },
+        ["xmake::openssl_0542b0491c164d4dadba757a6e268ba2_release_1.1.1q_external"] = false,
+        ["xmake::concurrentqueue_4e0143c97b65425b855ad5fd03038b6a_release_master_external"] = {
+            version = "master",
+            sysincludedirs = {
+                "/home/youngday/.xmake/packages/c/concurrentqueue/master/4e0143c97b65425b855ad5fd03038b6a/include"
+            }
+        },
+        ["xmake::yaml-cpp_c43d7f3fd9044adcaea2b25c200c62dd_release_0.7.0_external"] = {
+            version = "0.7.0",
+            license = "MIT",
+            static = true,
+            sysincludedirs = {
+                "/home/youngday/.xmake/packages/y/yaml-cpp/0.7.0/c43d7f3fd9044adcaea2b25c200c62dd/include"
+            },
+            links = {
+                "yaml-cpp"
+            },
+            linkdirs = {
+                "/home/youngday/.xmake/packages/y/yaml-cpp/0.7.0/c43d7f3fd9044adcaea2b25c200c62dd/lib"
+            },
+            libfiles = {
+                "/home/youngday/.xmake/packages/y/yaml-cpp/0.7.0/c43d7f3fd9044adcaea2b25c200c62dd/lib/libyaml-cpp.a"
+            }
+        },
+        ["xmake::xtensor-blas_a920b090431f465cabe8ff22ad4ee33e_release_0.20.0_external"] = {
+            version = "0.20.0",
+            license = "BSD-3-Clause",
+            sysincludedirs = {
+                "/home/youngday/.xmake/packages/x/xtensor-blas/0.20.0/a920b090431f465cabe8ff22ad4ee33e/include"
+            }
+        },
+        ["xmake::coost_e477bba71d244fb991955f2e89d7e5fb_release_v3.0.0_external"] = false,
+        ["xmake::fmt_d363b063d73b40728217e45838c2553c_release_9.1.0_external"] = {
+            version = "9.1.0",
+            static = true,
+            sysincludedirs = {
+                "/home/youngday/.xmake/packages/f/fmt/9.1.0/d363b063d73b40728217e45838c2553c/include"
+            },
+            links = {
+                "fmt"
+            },
+            linkdirs = {
+                "/home/youngday/.xmake/packages/f/fmt/9.1.0/d363b063d73b40728217e45838c2553c/lib"
+            },
+            libfiles = {
+                "/home/youngday/.xmake/packages/f/fmt/9.1.0/d363b063d73b40728217e45838c2553c/lib/libfmt.a"
+            }
+        },
+        ["xmake::nlohmann_json_d0ab6439a26046eab271bd900a8ea21b_release_v3.11.2_external"] = false,
+        ["xmake::libcurl_208190e45693494f8b84da48dbc4c511_release_7.84.0_external"] = false,
+        ["xmake::xsimd_228cd1c646d14b5a85ec352c6102b7ff_release_9.0.1_external"] = false,
+        ["xmake::xtl_879889b01c084e069706381a4e7b5489_release_0.7.4_external"] = false,
+        ["xmake::toml++_0ee2ce30e106430682aff45d348488f9_release_v3.2.0_external"] = {
+            version = "v3.2.0",
+            sysincludedirs = {
+                "/home/youngday/.xmake/packages/t/toml++/v3.2.0/0ee2ce30e106430682aff45d348488f9/include"
+            }
+        },
+        ["xmake::tbox_c7795a8b27604b7893a8015becf061dc_debug_master_external"] = {
+            version = "master",
+            static = true,
+            linkdirs = {
+                "/home/youngday/.xmake/packages/t/tbox/master/c7795a8b27604b7893a8015becf061dc/lib"
+            },
+            defines = "__tb_debug__",
+            sysincludedirs = {
+                "/home/youngday/.xmake/packages/t/tbox/master/c7795a8b27604b7893a8015becf061dc/include"
+            },
+            links = {
+                "tbox"
+            },
+            syslinks = "pthread",
+            libfiles = {
+                "/home/youngday/.xmake/packages/t/tbox/master/c7795a8b27604b7893a8015becf061dc/lib/libtbox.a"
+            }
+        },
+        ["xmake::cpr_71346b54ed9942bbacc59e95b7ed942b_release_1.8.3_external"] = {
+            version = "1.8.3",
+            license = "MIT",
+            static = true,
+            sysincludedirs = {
+                "/home/youngday/.xmake/packages/c/cpr/1.8.3/71346b54ed9942bbacc59e95b7ed942b/include"
+            },
+            links = {
+                "cpr"
+            },
+            linkdirs = {
+                "/home/youngday/.xmake/packages/c/cpr/1.8.3/71346b54ed9942bbacc59e95b7ed942b/lib"
+            },
+            libfiles = {
+                "/home/youngday/.xmake/packages/c/cpr/1.8.3/71346b54ed9942bbacc59e95b7ed942b/lib/libcpr.a"
+            }
+        }
+    },
+    find_programver_fetch_package_system = {
+        ["/home/youngday/lib/cmake-3.23.2-linux-x86_64/bin/cmake"] = "3.23.2",
+        ["/usr/bin/pkg-config"] = "0.29.1"
+    },
+    find_programver_fetch_package_xmake = {
+        ["/home/youngday/lib/cmake-3.23.2-linux-x86_64/bin/cmake"] = "3.23.2",
+        ["/usr/bin/pkg-config"] = "0.29.1"
+    },
+    find_programver = {
+        ["/usr/bin/g++"] = "9.4.0-1ubuntu1",
+        ["/home/youngday/lib/cmake-3.23.2-linux-x86_64/bin/cmake"] = "3.23.2",
+        ["/usr/bin/gcc"] = "9.4.0-1ubuntu1"
+    },
+    ["detect.tools.gcc.has_cflags"] = {
+        ["/usr/bin/gcc_9.4.0-1ubuntu1"] = {
+            ["--version"] = true,
+            ["-print-sysroot-headers-suffix"] = true,
+            ["-print-multiarch"] = true,
+            ["-print-sysroot"] = true,
+            ["-Xassembler"] = true,
+            ["-dumpmachine"] = true,
+            ["-print-multi-directory"] = true,
+            ["--help"] = true,
+            ["-x"] = true,
+            ["-dumpversion"] = true,
+            ["-E"] = true,
+            ["-print-search-dirs"] = true,
+            ["-B"] = true,
+            ["-v"] = true,
+            ["--param"] = true,
+            ["--target-help"] = true,
+            ["-print-multi-os-directory"] = true,
+            ["-no-canonical-prefixes"] = true,
+            ["-time"] = true,
+            ["-Xlinker"] = true,
+            ["-pass-exit-codes"] = true,
+            ["-c"] = true,
+            ["-Xpreprocessor"] = true,
+            ["-dumpspecs"] = true,
+            ["-save-temps"] = true,
+            ["-pipe"] = true,
+            ["-print-multi-lib"] = true,
+            ["-pie"] = true,
+            ["-shared"] = true,
+            ["-print-libgcc-file-name"] = true,
+            ["-o"] = true,
+            ["-S"] = true
+        }
+    },
+    find_program_fetch_package_xmake = {
+        cmake = "/home/youngday/lib/cmake-3.23.2-linux-x86_64/bin/cmake",
+        ["pkg-config"] = "/usr/bin/pkg-config"
+    },
+    ["detect.tools.gcc.has_ldflags"] = {
+        ["/usr/bin/g++_9.4.0-1ubuntu1"] = {
+            ["--dynamic-list-data"] = true,
+            ["-f"] = true,
+            ["-O"] = true,
+            ["--default-imported-symver"] = true,
+            ["--gc-keep-exported"] = true,
+            ["-G"] = true,
+            ["--architecture"] = true,
+            ["-Ttext"] = true,
+            ["-Bgroup"] = true,
+            ["--split-by-reloc"] = true,
+            ["--trace"] = true,
+            ["--section-start"] = true,
+            ["--ld-generated-unwind-info"] = true,
+            ["-Ttext-segment"] = true,
+            ["--force-group-allocation"] = true,
+            ["--no-allow-shlib-undefined"] = true,
+            ["--copy-dt-needed-entries"] = true,
+            ["-assert"] = true,
+            ["-g"] = true,
+            ["--require-defined"] = true,
+            ["--add-stdcall-alias"] = true,
+            ["--warn-shared-textrel"] = true,
+            ["--no-keep-memory"] = true,
+            ["--default-script"] = true,
+            ["-F"] = true,
+            ["-o"] = true,
+            ["--map-whole-files"] = true,
+            ["--whole-archive"] = true,
+            ["--no-bind"] = true,
+            ["--forceinteg"] = true,
+            ["-V"] = true,
+            ["-dp"] = true,
+            ["--fatal-warnings"] = true,
+            ["-Bsymbolic"] = true,
+            ["--unique"] = true,
+            ["-Trodata-segment"] = true,
+            ["--no-accept-unknown-input-arch"] = true,
+            ["-plugin"] = true,
+            ["--relax"] = true,
+            ["--no-copy-dt-needed-entries"] = true,
+            ["--filter"] = true,
+            ["--no-relax"] = true,
+            ["--no-check-sections"] = true,
+            ["-l"] = true,
+            ["--image-base"] = true,
+            ["--default-symver"] = true,
+            ["--no-undefined"] = true,
+            ["--no-as-needed"] = true,
+            ["--warn-duplicate-exports"] = true,
+            ["--pic-executable"] = true,
+            ["--enable-new-dtags"] = true,
+            ["--disable-stdcall-fixup"] = true,
+            ["-Map"] = true,
+            ["--no-define-common"] = true,
+            ["--discard-all"] = true,
+            ["--script"] = true,
+            ["--dynamic-linker"] = true,
+            ["--no-fatal-warnings"] = true,
+            ["--export-dynamic"] = true,
+            ["--exclude-all-symbols"] = true,
+            ["-EL"] = true,
+            ["--no-undefined-version"] = true,
+            ["--no-isolation"] = true,
+            ["--no-warn-search-mismatch"] = true,
+            ["--print-gc-sections"] = true,
+            ["--print-memory-usage"] = true,
+            ["--push-state"] = true,
+            ["--disable-large-address-aware"] = true,
+            ["-e"] = true,
+            ["--force-exe-suffix"] = true,
+            ["--allow-multiple-definition"] = true,
+            ["--no-gc-sections"] = true,
+            ["--enable-extra-pep-debug"] = true,
+            ["--wrap"] = true,
+            ["--section-alignment"] = true,
+            ["--warn-common"] = true,
+            ["--cref"] = true,
+            ["--no-strip-discarded"] = true,
+            ["--exclude-modules-for-implib"] = true,
+            ["--print-map"] = true,
+            ["-u"] = true,
+            ["--no-dynamic-linker"] = true,
+            ["-soname"] = true,
+            ["-Bshareable"] = true,
+            ["--oformat"] = true,
+            ["--stack"] = true,
+            ["-rpath-link"] = true,
+            ["--accept-unknown-input-arch"] = true,
+            ["--omagic"] = true,
+            ["--minor-image-version"] = true,
+            ["--heap"] = true,
+            ["--reduce-memory-overheads"] = true,
+            ["-m"] = true,
+            ["--trace-symbol"] = true,
+            ["-Qy"] = true,
+            ["--discard-locals"] = true,
+            ["-Ur"] = true,
+            ["--eh-frame-hdr"] = true,
+            ["--auxiliary"] = true,
+            ["--gc-sections"] = true,
+            ["-L"] = true,
+            ["--retain-symbols-file"] = true,
+            ["--nxcompat"] = true,
+            ["--disable-new-dtags"] = true,
+            ["-Tbss"] = true,
+            ["--spare-dynamic-tags"] = true,
+            ["--no-print-gc-sections"] = true,
+            ["--enable-extra-pe-debug"] = true,
+            ["-z"] = true,
+            ["--gpsize"] = true,
+            ["--exclude-libs"] = true,
+            ["-dT"] = true,
+            ["--undefined"] = true,
+            ["--enable-runtime-pseudo-reloc"] = true,
+            ["--subsystem"] = true,
+            ["--no-omagic"] = true,
+            ["-debug"] = true,
+            ["--no-print-map-discarded"] = true,
+            ["--format"] = true,
+            ["-c"] = true,
+            ["--start-group"] = true,
+            ["--no-ld-generated-unwind-info"] = true,
+            ["--file-alignment"] = true,
+            ["-init"] = true,
+            ["-P"] = true,
+            ["--high-entropy-va"] = true,
+            ["--emit-relocs"] = true,
+            ["--output"] = true,
+            ["--tsaware"] = true,
+            ["--version-exports-section"] = true,
+            ["-R"] = true,
+            ["--major-subsystem-version"] = true,
+            ["--check-sections"] = true,
+            ["--task-link"] = true,
+            ["--disable-auto-image-base"] = true,
+            ["--out-implib"] = true,
+            ["--strip-all"] = true,
+            ["--relocatable"] = true,
+            ["--enable-long-section-names"] = true,
+            ["--demangle"] = true,
+            ["--enable-auto-import"] = true,
+            ["--defsym"] = true,
+            ["--nmagic"] = true,
+            ["--no-seh"] = true,
+            ["--sort-section"] = true,
+            ["--disable-runtime-pseudo-reloc"] = true,
+            ["--pop-state"] = true,
+            ["--export-all-symbols"] = true,
+            ["-fini"] = true,
+            ["--traditional-format"] = true,
+            ["-b"] = true,
+            ["--split-by-file"] = true,
+            ["--warn-once"] = true,
+            ["--warn-multiple-gp"] = true,
+            ["--warn-constructors"] = true,
+            ["--enable-stdcall-fixup"] = true,
+            ["--target-help"] = true,
+            ["--library"] = true,
+            ["--mri-script"] = true,
+            ["-h"] = true,
+            ["--print-output-format"] = true,
+            ["-flto"] = true,
+            ["--end-group"] = true,
+            ["--no-warn-mismatch"] = true,
+            ["-plugin-opt"] = true,
+            ["--warn-alternate-em"] = true,
+            ["--minor-subsystem-version"] = true,
+            ["--dynamic-list-cpp-typeinfo"] = true,
+            ["--no-demangle"] = true,
+            ["--major-os-version"] = true,
+            ["--strip-debug"] = true,
+            ["--discard-none"] = true,
+            ["-Tldata-segment"] = true,
+            ["--ignore-unresolved-symbol"] = true,
+            ["--as-needed"] = true,
+            ["-I"] = true,
+            ["--dynamic-list-cpp-new"] = true,
+            ["--error-unresolved-symbols"] = true,
+            ["--help"] = true,
+            ["-Y"] = true,
+            ["--dynamic-list"] = true,
+            ["--sort-common"] = true,
+            ["--exclude-symbols"] = true,
+            ["--no-whole-archive"] = true,
+            ["--warn-unresolved-symbols"] = true,
+            ["-a"] = true,
+            ["--just-symbols"] = true,
+            ["--no-map-whole-files"] = true,
+            ["--wdmdriver"] = true,
+            ["--warn-section-align"] = true,
+            ["-qmagic"] = true,
+            ["-rpath"] = true,
+            ["--no-eh-frame-hdr"] = true,
+            ["--support-old-code"] = true,
+            ["--version"] = true,
+            ["--large-address-aware"] = true,
+            ["--output-def"] = true,
+            ["--dll"] = true,
+            ["--major-image-version"] = true,
+            ["--verbose"] = true,
+            ["--minor-os-version"] = true,
+            ["--dynamicbase"] = true,
+            ["--strip-discarded"] = true,
+            ["-y"] = true,
+            ["--disable-auto-import"] = true,
+            ["--enable-reloc-section"] = true,
+            ["-T"] = true,
+            ["--print-map-discarded"] = true,
+            ["-static"] = true,
+            ["-Tdata"] = true,
+            ["--disable-long-section-names"] = true,
+            ["--print-sysroot"] = true,
+            ["-Bsymbolic-functions"] = true,
+            ["--allow-shlib-undefined"] = true,
+            ["--enable-auto-image-base"] = true,
+            ["-nostdlib"] = true,
+            ["--compat-implib"] = true,
+            ["--orphan-handling"] = true,
+            ["--no-export-dynamic"] = true,
+            ["-A"] = true,
+            ["--entry"] = true,
+            ["--disable-multiple-abs-defs"] = true,
+            ["--kill-at"] = true,
+            ["--stats"] = true,
+            ["--library-path"] = true,
+            ["--version-script"] = true
+        }
     },
     ["detect.sdks.find_qt"] = {
         qt = {
-            libexecdir_host = "/home/youngday/Qt/6.2.4/gcc_64/libexec",
             bindir_host = "/home/youngday/Qt/6.2.4/gcc_64/bin",
-            pluginsdir = "/home/youngday/Qt/6.2.4/gcc_64/plugins",
-            libexecdir = "/home/youngday/Qt/6.2.4/gcc_64/libexec",
+            libexecdir_host = "/home/youngday/Qt/6.2.4/gcc_64/libexec",
+            qmldir = "/home/youngday/Qt/6.2.4/gcc_64/qml",
             bindir = "/home/youngday/Qt/6.2.4/gcc_64/bin",
             includedir = "/home/youngday/Qt/6.2.4/gcc_64/include",
-            sdkdir = "/home/youngday/Qt/6.2.4/gcc_64",
             sdkver = "6.2.4",
+            libexecdir = "/home/youngday/Qt/6.2.4/gcc_64/libexec",
+            sdkdir = "/home/youngday/Qt/6.2.4/gcc_64",
             libdir = "/home/youngday/Qt/6.2.4/gcc_64/lib",
-            mkspecsdir = "/home/youngday/Qt/6.2.4/gcc_64/mkspecs",
-            qmldir = "/home/youngday/Qt/6.2.4/gcc_64/qml"
+            pluginsdir = "/home/youngday/Qt/6.2.4/gcc_64/plugins",
+            mkspecsdir = "/home/youngday/Qt/6.2.4/gcc_64/mkspecs"
         }
+    },
+    ["lib.detect.has_flags"] = {
+        ["linux_x86_64_/usr/bin/gcc_9.4.0-1ubuntu1_cxx_cxflags__-DNDEBUG"] = true,
+        ["linux_x86_64_/usr/bin/g++_9.4.0-1ubuntu1_ld_ldflags_-m64 -m64_-Wl,-rpath=/home/youngday/Qt/6.2.4/gcc_64/lib"] = true,
+        ["linux_x86_64_/usr/bin/gcc_9.4.0-1ubuntu1_cxx_cxflags__-fPIC"] = true,
+        ["linux_x86_64_/usr/bin/gcc_9.4.0-1ubuntu1_cxx_cxflags__-fvisibility-inlines-hidden"] = true,
+        ["linux_x86_64_/usr/bin/gcc_9.4.0-1ubuntu1_cxx_cxflags__-fdiagnostics-color=always"] = true,
+        ["linux_x86_64_/usr/bin/g++_9.4.0-1ubuntu1_ld_cxflags__-fPIC"] = true,
+        ["linux_x86_64_/usr/bin/gcc_9.4.0-1ubuntu1_cxx_cxflags__-MMD -MF"] = true,
+        ["linux_x86_64_/usr/bin/g++_9.4.0-1ubuntu1_ld_ldflags_-m64 -m64_-Wl,-rpath,/usr/local/cuda-11.3/lib64:/usr/local/lib"] = true,
+        ["linux_x86_64_/usr/bin/gcc_9.4.0-1ubuntu1_cxx___-O3"] = true
+    },
+    find_program = {
+        dmd = false,
+        ["/usr/bin/gcc"] = "/usr/bin/gcc",
+        tar = "/usr/bin/tar",
+        emerge = false,
+        cmake = "/home/youngday/lib/cmake-3.23.2-linux-x86_64/bin/cmake",
+        brew = false,
+        ["pkg-config"] = "/usr/bin/pkg-config",
+        unzip = "/usr/bin/unzip",
+        ["/usr/bin/g++"] = "/usr/bin/g++",
+        gdc = false,
+        gzip = "/usr/bin/gzip",
+        git = "/usr/bin/git",
+        dpkg = "/usr/bin/dpkg",
+        qmake = "/home/youngday/Qt/6.2.4/gcc_64/bin/qmake",
+        zig = false,
+        pacman = false,
+        gcc = "/usr/bin/gcc",
+        ldc2 = false
+    },
+    find_program_gcc_arch_x86_64_plat_linux_checktoolar = {
+        ar = "/usr/bin/ar"
+    },
+    find_program_gcc_arch_x86_64_plat_linux_checktoolcc = {
+        gcc = "/usr/bin/gcc"
+    },
+    find_program_fetch_package_system = {
+        cmake = "/home/youngday/lib/cmake-3.23.2-linux-x86_64/bin/cmake",
+        ["pkg-config"] = "/usr/bin/pkg-config"
+    },
+    find_program_gcc_arch_x86_64_plat_linux_checktoolld = {
+        ["g++"] = "/usr/bin/g++"
+    },
+    find_package_linux_x86_64_fetch_package_system = {
+        nlohmann_json_d0ab6439a26046eab271bd900a8ea21b_release_external = false,
+        openssl_0542b0491c164d4dadba757a6e268ba2_release_external = {
+            linkdirs = {
+                "/usr/lib/x86_64-linux-gnu"
+            },
+            links = {
+                "ssl",
+                "crypto"
+            }
+        },
+        ["apt::libopenblas-dev_811c62adbd54418cb6c78d3b43ac74ff_release_external"] = false,
+        openblas_811c62adbd54418cb6c78d3b43ac74ff_release_external = {
+            sysincludedirs = {
+                "/usr/include/x86_64-linux-gnu/openblas-pthread/"
+            },
+            linkdirs = {
+                "/usr/lib/x86_64-linux-gnu/openblas-pthread/"
+            },
+            links = {
+                "openblas"
+            }
+        },
+        ["pacman::nlohmann-json_d0ab6439a26046eab271bd900a8ea21b_release_external"] = false,
+        xsimd_228cd1c646d14b5a85ec352c6102b7ff_release_external = false,
+        xtensor_7589bb6431db4fba90e4d138dda37226_release_external = {
+            sysincludedirs = {
+                "/usr/local/include"
+            }
+        },
+        xtl_879889b01c084e069706381a4e7b5489_release_external = {
+            sysincludedirs = {
+                "/usr/local/include"
+            }
+        },
+        ["coost_e477bba71d244fb991955f2e89d7e5fb_release_3.0.0_external"] = {
+            version = "3.0.0",
+            linkdirs = {
+                "/usr/local/lib"
+            },
+            links = {
+                "co",
+                "pthread",
+                "dl",
+                "backtrace"
+            },
+            sysincludedirs = {
+                "/usr/local/include"
+            }
+        },
+        ["pacman::libopenblas_811c62adbd54418cb6c78d3b43ac74ff_release_external"] = false,
+        ["cmake::OpenCV_4e0143c97b65425b855ad5fd03038b6a_release_latest_external"] = {
+            ldflags = {
+                "-Wl,-rpath,/usr/local/cuda-11.3/lib64:/usr/local/lib"
+            },
+            sysincludedirs = {
+                "/usr/local/include/opencv4"
+            },
+            links = {
+                "opencv_gapi",
+                "opencv_stitching",
+                "opencv_alphamat",
+                "opencv_aruco",
+                "opencv_barcode",
+                "opencv_bgsegm",
+                "opencv_bioinspired",
+                "opencv_ccalib",
+                "opencv_cudabgsegm",
+                "opencv_cudafeatures2d",
+                "opencv_cudaobjdetect",
+                "opencv_cudastereo",
+                "opencv_dnn_objdetect",
+                "opencv_dnn_superres",
+                "opencv_dpm",
+                "opencv_face",
+                "opencv_freetype",
+                "opencv_fuzzy",
+                "opencv_hdf",
+                "opencv_hfs",
+                "opencv_img_hash",
+                "opencv_intensity_transform",
+                "opencv_line_descriptor",
+                "opencv_mcc",
+                "opencv_quality",
+                "opencv_rapid",
+                "opencv_reg",
+                "opencv_rgbd",
+                "opencv_saliency",
+                "opencv_sfm",
+                "opencv_stereo",
+                "opencv_structured_light",
+                "opencv_superres",
+                "opencv_surface_matching",
+                "opencv_tracking",
+                "opencv_videostab",
+                "opencv_viz",
+                "opencv_wechat_qrcode",
+                "opencv_xfeatures2d",
+                "opencv_xobjdetect",
+                "opencv_xphoto",
+                "opencv_shape",
+                "opencv_highgui",
+                "opencv_datasets",
+                "opencv_plot",
+                "opencv_text",
+                "opencv_ml",
+                "opencv_phase_unwrapping",
+                "opencv_videoio",
+                "opencv_cudaoptflow",
+                "opencv_cudalegacy",
+                "opencv_cudawarping",
+                "opencv_optflow",
+                "opencv_ximgproc",
+                "opencv_video",
+                "opencv_imgcodecs",
+                "opencv_objdetect",
+                "opencv_calib3d",
+                "opencv_dnn",
+                "opencv_features2d",
+                "opencv_flann",
+                "opencv_photo",
+                "opencv_cudaimgproc",
+                "opencv_cudafilters",
+                "opencv_imgproc",
+                "opencv_cudaarithm",
+                "opencv_core",
+                "opencv_cudev"
+            },
+            linkdirs = {
+                "/usr/local/lib"
+            },
+            libfiles = {
+                "/usr/local/lib/libopencv_gapi.so",
+                "/usr/local/lib/libopencv_stitching.so",
+                "/usr/local/lib/libopencv_alphamat.so",
+                "/usr/local/lib/libopencv_aruco.so",
+                "/usr/local/lib/libopencv_barcode.so",
+                "/usr/local/lib/libopencv_bgsegm.so",
+                "/usr/local/lib/libopencv_bioinspired.so",
+                "/usr/local/lib/libopencv_ccalib.so",
+                "/usr/local/lib/libopencv_cudabgsegm.so",
+                "/usr/local/lib/libopencv_cudafeatures2d.so",
+                "/usr/local/lib/libopencv_cudaobjdetect.so",
+                "/usr/local/lib/libopencv_cudastereo.so",
+                "/usr/local/lib/libopencv_dnn_objdetect.so",
+                "/usr/local/lib/libopencv_dnn_superres.so",
+                "/usr/local/lib/libopencv_dpm.so",
+                "/usr/local/lib/libopencv_face.so",
+                "/usr/local/lib/libopencv_freetype.so",
+                "/usr/local/lib/libopencv_fuzzy.so",
+                "/usr/local/lib/libopencv_hdf.so",
+                "/usr/local/lib/libopencv_hfs.so",
+                "/usr/local/lib/libopencv_img_hash.so",
+                "/usr/local/lib/libopencv_intensity_transform.so",
+                "/usr/local/lib/libopencv_line_descriptor.so",
+                "/usr/local/lib/libopencv_mcc.so",
+                "/usr/local/lib/libopencv_quality.so",
+                "/usr/local/lib/libopencv_rapid.so",
+                "/usr/local/lib/libopencv_reg.so",
+                "/usr/local/lib/libopencv_rgbd.so",
+                "/usr/local/lib/libopencv_saliency.so",
+                "/usr/local/lib/libopencv_sfm.so",
+                "/usr/local/lib/libopencv_stereo.so",
+                "/usr/local/lib/libopencv_structured_light.so",
+                "/usr/local/lib/libopencv_superres.so",
+                "/usr/local/lib/libopencv_surface_matching.so",
+                "/usr/local/lib/libopencv_tracking.so",
+                "/usr/local/lib/libopencv_videostab.so",
+                "/usr/local/lib/libopencv_viz.so",
+                "/usr/local/lib/libopencv_wechat_qrcode.so",
+                "/usr/local/lib/libopencv_xfeatures2d.so",
+                "/usr/local/lib/libopencv_xobjdetect.so",
+                "/usr/local/lib/libopencv_xphoto.so",
+                "/usr/local/lib/libopencv_shape.so",
+                "/usr/local/lib/libopencv_highgui.so",
+                "/usr/local/lib/libopencv_datasets.so",
+                "/usr/local/lib/libopencv_plot.so",
+                "/usr/local/lib/libopencv_text.so",
+                "/usr/local/lib/libopencv_ml.so",
+                "/usr/local/lib/libopencv_phase_unwrapping.so",
+                "/usr/local/lib/libopencv_videoio.so",
+                "/usr/local/lib/libopencv_cudaoptflow.so",
+                "/usr/local/lib/libopencv_cudalegacy.so",
+                "/usr/local/lib/libopencv_cudawarping.so",
+                "/usr/local/lib/libopencv_optflow.so",
+                "/usr/local/lib/libopencv_ximgproc.so",
+                "/usr/local/lib/libopencv_video.so",
+                "/usr/local/lib/libopencv_imgcodecs.so",
+                "/usr/local/lib/libopencv_objdetect.so",
+                "/usr/local/lib/libopencv_calib3d.so",
+                "/usr/local/lib/libopencv_dnn.so",
+                "/usr/local/lib/libopencv_features2d.so",
+                "/usr/local/lib/libopencv_flann.so",
+                "/usr/local/lib/libopencv_photo.so",
+                "/usr/local/lib/libopencv_cudaimgproc.so",
+                "/usr/local/lib/libopencv_cudafilters.so",
+                "/usr/local/lib/libopencv_imgproc.so",
+                "/usr/local/lib/libopencv_cudaarithm.so",
+                "/usr/local/lib/libopencv_core.so",
+                "/usr/local/lib/libopencv_cudev.so"
+            }
+        },
+        libcurl_208190e45693494f8b84da48dbc4c511_release_external = {
+            sysincludedirs = {
+                "/usr/include/x86_64-linux-gnu"
+            },
+            linkdirs = {
+                "/usr/lib/x86_64-linux-gnu"
+            },
+            links = {
+                "curl"
+            }
+        },
+        ["apt::nlohmann-json3-dev_d0ab6439a26046eab271bd900a8ea21b_release_external"] = false,
+        ["cmake::LibXml2_4e0143c97b65425b855ad5fd03038b6a_release_latest_external"] = {
+            sysincludedirs = {
+                "/usr/include/libxml2"
+            },
+            linkdirs = {
+                "/usr/lib/x86_64-linux-gnu"
+            },
+            links = {
+                "xml2"
+            },
+            libfiles = {
+                "/usr/lib/x86_64-linux-gnu/libxml2.so"
+            }
+        }
+    },
+    ["detect.sdks.find_vcpkgdir"] = false,
+    find_program_gcc_arch_x86_64_plat_linux_checktoolcxx = {
+        gcc = "/usr/bin/gcc"
     }
 }
